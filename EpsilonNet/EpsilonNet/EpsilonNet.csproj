@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{17D7413A-2700-4725-A8C3-49C44BCB3F2B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>EpsilonNet</RootNamespace>
+    <AssemblyName>EpsilonNet</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\ICustomerRepository.cs" />
+    <Compile Include="Models\IItemRepository.cs" />
+    <Compile Include="Models\IPurchaseDetailRepository.cs" />
+    <Compile Include="Models\IPurchaseRepository.cs" />
+    <Compile Include="Models\ISaleDetailRepository.cs" />
+    <Compile Include="Models\ISaleRepository.cs" />
+    <Compile Include="Models\ISupplierRepository.cs" />
+    <Compile Include="Models\Item.cs" />
+    <Compile Include="Models\Purchase.cs" />
+    <Compile Include="Models\PurchaseDetail.cs" />
+    <Compile Include="Models\Sale.cs" />
+    <Compile Include="Models\SaleDetail.cs" />
+    <Compile Include="Models\Supplier.cs" />
+    <Compile Include="Presenters\Common\ModelDataValidation.cs" />
+    <Compile Include="Presenters\Common\SqlDatabaseConnection.cs" />
+    <Compile Include="Presenters\CustomerPresenter.cs" />
+    <Compile Include="Presenters\ItemPresenter.cs" />
+    <Compile Include="Presenters\MainPresenter.cs" />
+    <Compile Include="Presenters\PurchaseDetailPresenter.cs" />
+    <Compile Include="Presenters\PurchasePresenter.cs" />
+    <Compile Include="Presenters\SaleDetailPresenter.cs" />
+    <Compile Include="Presenters\SalePresenter.cs" />
+    <Compile Include="Presenters\SupplierPresenter.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\CustomerView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\CustomerView.Designer.cs">
+      <DependentUpon>CustomerView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ICustomerView.cs" />
+    <Compile Include="Views\IItemView.cs" />
+    <Compile Include="Views\IMainView.cs" />
+    <Compile Include="Views\IPurchaseDetailView.cs" />
+    <Compile Include="Views\IPurchaseView.cs" />
+    <Compile Include="Views\ISaleDetailView.cs" />
+    <Compile Include="Views\ISaleView.cs" />
+    <Compile Include="Views\ISupplierView.cs" />
+    <Compile Include="Views\ItemView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ItemView.Designer.cs">
+      <DependentUpon>ItemView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MainView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\MainView.Designer.cs">
+      <DependentUpon>MainView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PurchaseDetailView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\PurchaseDetailView.Designer.cs">
+      <DependentUpon>PurchaseDetailView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PurchaseView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\PurchaseView.Designer.cs">
+      <DependentUpon>PurchaseView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SaleDetailView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\SaleDetailView.Designer.cs">
+      <DependentUpon>SaleDetailView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SaleView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\SaleView.Designer.cs">
+      <DependentUpon>SaleView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SupplierView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\SupplierView.Designer.cs">
+      <DependentUpon>SupplierView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_Repositories\BaseRepository.cs" />
+    <Compile Include="_Repositories\CustomerRepository.cs" />
+    <Compile Include="_Repositories\ItemRepository.cs" />
+    <Compile Include="_Repositories\PurchaseDetailRepository.cs" />
+    <Compile Include="_Repositories\PurchaseRepository.cs" />
+    <Compile Include="_Repositories\SaleDetailRepository.cs" />
+    <Compile Include="_Repositories\SaleRepository.cs" />
+    <Compile Include="_Repositories\SupplierRepository.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Views\CustomerView.resx">
+      <DependentUpon>CustomerView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ItemView.resx">
+      <DependentUpon>ItemView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\MainView.resx">
+      <DependentUpon>MainView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\PurchaseDetailView.resx">
+      <DependentUpon>PurchaseDetailView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\PurchaseView.resx">
+      <DependentUpon>PurchaseView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\SaleDetailView.resx">
+      <DependentUpon>SaleDetailView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\SaleView.resx">
+      <DependentUpon>SaleView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\SupplierView.resx">
+      <DependentUpon>SupplierView.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SQL_queries\database queries.sql" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

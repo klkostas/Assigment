@@ -1,0 +1,17 @@
+C:\Users\Gas\source\repos\EpsilonNet\EpsilonNet\obj\Debug\EpsilonNet.Properties.Resources.resources
+C:\Users\Gas\source\repos\EpsilonNet\EpsilonNet\obj\Debug\EpsilonNet.Views.CustomerView.resources
+C:\Users\Gas\source\repos\EpsilonNet\EpsilonNet\obj\Debug\EpsilonNet.csproj.GenerateResource.cache
+C:\Users\Gas\source\repos\EpsilonNet\EpsilonNet\obj\Debug\EpsilonNet.csproj.CoreCompileInputs.cache
+C:\Users\Gas\source\repos\EpsilonNet\EpsilonNet\bin\Debug\EpsilonNet.exe.config
+C:\Users\Gas\source\repos\EpsilonNet\EpsilonNet\bin\Debug\EpsilonNet.exe
+C:\Users\Gas\source\repos\EpsilonNet\EpsilonNet\bin\Debug\EpsilonNet.pdb
+C:\Users\Gas\source\repos\EpsilonNet\EpsilonNet\obj\Debug\EpsilonNet.exe
+C:\Users\Gas\source\repos\EpsilonNet\EpsilonNet\obj\Debug\EpsilonNet.pdb
+C:\Users\Gas\source\repos\EpsilonNet\EpsilonNet\obj\Debug\EpsilonNet.Views.MainView.resources
+C:\Users\Gas\source\repos\EpsilonNet\EpsilonNet\obj\Debug\EpsilonNet.Views.SupplierView.resources
+C:\Users\Gas\source\repos\EpsilonNet\EpsilonNet\obj\Debug\EpsilonNet.Views.ItemView.resources
+C:\Users\Gas\source\repos\EpsilonNet\EpsilonNet\obj\Debug\EpsilonNet.csproj.AssemblyReference.cache
+C:\Users\Gas\source\repos\EpsilonNet\EpsilonNet\obj\Debug\EpsilonNet.Views.PurchaseView.resources
+C:\Users\Gas\source\repos\EpsilonNet\EpsilonNet\obj\Debug\EpsilonNet.Views.PurchaseDetailView.resources
+C:\Users\Gas\source\repos\EpsilonNet\EpsilonNet\obj\Debug\EpsilonNet.Views.SaleView.resources
+C:\Users\Gas\source\repos\EpsilonNet\EpsilonNet\obj\Debug\EpsilonNet.Views.SaleDetailView.resources
